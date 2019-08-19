@@ -1,0 +1,56 @@
+//Typography
+
+//Text
+$base-font-size: 16px;
+$base-line: 1.4;
+
+$font-stack-primary:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//Border Radius
+$br--default: 5px;
+
+// Descriptive Base Colors
+$white: #fff;
+$gray: #929292;
+$viking: #58e1c1;
+$malibu: #51ddfc;
+
+// Color Usage
+$color-primary: $viking;
+$font-color-primary: $gray;
+
+//Headlines
+$head-primary: $viking;
+//Links
+$links-color: $malibu;
+
+// Color Palette Modifiers
+
+$shades: (
+           light   : lighten($gray, 10%),
+           base    : $gray
+
+);
+//ui colors
+$default: #51ddfc;
+$success: #63cc82;
+$error : #e4757a;
+$info : #927bc1;
+
+$ui-colors: (
+        default   :  $default,
+        success   :  $success,
+        error     :  $error,
+        warning   :  #fd7856,
+        info      :  $info
+);
+
+$theme: (
+    grid__col--12 : #80e8d1,
+    grid__col--6 :  darken($default, 23%),
+    grid__col--4 :  lighten($default, 10%),
+    grid__col--3 : #deb2ee,
+    grid__col--5 : lighten($success, 10%),
+    grid__col--7 : lighten($error, 10%),
+    grid__col--8 : #fd9f85
+);

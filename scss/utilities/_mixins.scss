@@ -1,0 +1,52 @@
+//BEM mixins
+
+@mixin e($e) {
+    &__#{$e} {
+        @content;
+    }
+}
+
+@mixin m($m) {
+    &--#{$m} {
+        @content;
+    }
+}
+
+//color ui
+@mixin ui($map) {
+
+    @each $theme,
+    $color in $map {
+        @include m($theme) {
+            background-color: map-get($map, $theme);
+        }
+
+    }
+}
+
+//Media queries and flex settings
+//navigation
+@mixin nav() {
+    @media (min-width: 1400px) {
+        flex-direction: row;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 120px;
+        }
+    }
+}
+
+//Form media query
+@mixin form() {
+    @media (min-width: 1400px) {
+
+        width: 80%;
+        margin-left: auto;
+
+        & img {
+            width: 50%;
+        }
+    }
+}

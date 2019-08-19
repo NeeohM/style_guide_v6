@@ -1,0 +1,10 @@
+//Convert px to em
+
+@function em($px) {
+    @return ($px / $base-font-size) * 1em;
+}
+
+@function colormap($map, $shade) {
+    @return map-get($map, $shade);
+
+}

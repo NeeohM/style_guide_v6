@@ -1,0 +1,21 @@
+
+@mixin theme($map){
+    @each $key,$value in $map{
+        [class^="#{$key} theme__colors"] {
+            background-color: $value;
+            @content;
+        }
+    }
+
+}
+@include theme($theme){
+    text-transform: lowercase;
+    color: $font-color-primary;
+    margin: 0 0 6px;
+    padding-left: 10px;
+};
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+    
+}

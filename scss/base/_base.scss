@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: $font-stack-primary;
+    color: $font-color-primary;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: em(14px);
+    line-height: $base-line;
+    
+}

@@ -1,0 +1,26 @@
+%head-prim{
+    font-size: em(24px);
+    color: $head-primary;
+    padding-left: 14px;
+}
+%head-sec {
+    font-size: em(14px);
+    font-weight: normal;
+    color: colormap($shades, light);
+    
+}
+%srt{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+}
+%centered {
+    display: block;
+    margin: 0 auto;
+}

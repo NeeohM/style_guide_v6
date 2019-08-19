@@ -1,0 +1,40 @@
+// .img--logo .img--frame .img--avatar
+.img{
+    @include m(logo)
+    {
+            @extend %centered;
+            @media (min-width: 1px) and (max-width:1400px){
+            margin-top:40px;
+            margin-bottom: 40px;
+    }
+}
+    @include m(frame) {
+             @extend %centered;
+             max-width: 100%;
+             border: 1px solid $font-color-primary;
+             padding:10px;
+
+    }
+    @include m(avatar) {
+            @extend %centered;
+            margin-top: 10px;
+            margin-bottom: 10px;
+                               
+    }
+
+}
+@media (min-width: 1400px){
+        .img--frame{
+                width:65%;
+                margin-left: 30px;
+                margin-top: 3px;
+        }
+        .grid__col--6 .img--avatar{
+                width:33%;
+                margin-left:150px;
+        }
+
+}
+
+
+

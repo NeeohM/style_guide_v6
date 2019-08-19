@@ -1,0 +1,31 @@
+.btn {
+
+    @include ui($ui-colors)
+}
+
+.theme {
+    @include e(colors) {
+        border: none;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: $br--default;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        
+        }
+    }
+
+
+button {
+    font-size: em(12px);
+    
+
+}
+@media (min-width: 1400px) {
+    .grid__col--12 button{
+        padding: 10px 52px;
+        width: initial;
+    }
+}
