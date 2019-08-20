@@ -27,7 +27,7 @@
 //Media queries and flex settings
 //navigation
 @mixin nav() {
-    @media (min-width: 1400px) {
+    @media (min-width: $desktop) {
         flex-direction: row;
 
         ul {
@@ -40,7 +40,7 @@
 
 //Form media query
 @mixin form() {
-    @media (min-width: 1400px) {
+    @media (min-width: $desktop) {
 
         width: 80%;
         margin-left: auto;

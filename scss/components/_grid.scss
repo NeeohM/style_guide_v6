@@ -7,7 +7,7 @@
 // **********************************************
 .container{
   padding: 0 30px;
-  @media (min-width: 1400px){
+  @media (min-width: $desktop){
     width:70%;
     margin: 0 auto 50px;
   }
@@ -44,7 +44,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 1400px) {
+        @media (min-width: $desktop) {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -63,14 +63,14 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 1400px) {
+    @media (min-width: $desktop) {
 
       // add grid gutter
       margin-left: 10px;
     }
   }
 }
-@media (min-width:1400px)
+@media (min-width:$desktop)
 {
   
  .grid__col--12:nth-last-of-type(1) {
